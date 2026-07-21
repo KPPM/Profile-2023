@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="history.css">
+<title>History</title>
+</head>
+<body class="bg">
+
+    <div class="icon-bar">
+        <a href="home.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png"height="40px"width="40px"/>
+          </a>
+    
+      <a href="history.html">
+        <img src="https://cdn-icons-png.flaticon.com/512/1800/1800109.png"height="40px"width="40px"/>
+      </a>
+
+
+      <a href="Dream.html">
+        <img src="https://cdn-icons-png.flaticon.com/512/1491/1491167.png"height="40px"width="40px"/>
+      </a>
+
+      <a href="https://satit.tsu.ac.th/">
+        <img src="https://cdn-icons-png.flaticon.com/512/2602/2602412.png"height="40px"width="40px"/>
+      </a>
+
+      <a href="contect.html">
+        <img src="https://cdn-icons-png.flaticon.com/512/2343/2343723.png"height="40px"width="40px"/>
+      </a>
+
+
+      </div>
+
+<h1 class="h1">My history</h1>
+
+<button style="background-color: #ff0000; color: white;" class="accordion">Name</button>
+<div class="panel">
+  <p>My name is Kongpob Songkong </p>
+  <p>My nickname is Kong</p>
+</div>
+
+<button style="background-color: #ff0000; color: white;" class="accordion">My Birtday</button>
+<div class="panel">
+  <p>My Birtday is 26 January 2007</p>
+  <p>I'm now 16 years old.</p>
+</div>
+
+<button style="background-color: #ff0000; color: white;" class="accordion">My School</button>
+<div class="panel">
+  <p>I'm currently studying in Mattayom 5 at  Demonstration School of Thaksin University, Phatthalung Campus.</p>
+<p>My school is a school that focuses on science and technology.</p>
+</div>
+
+<button style="background-color: #ff0000; color: white;" class="accordion">My favorite thing</button>
+<div class="panel">
+  <p>I really like programming.</p>
+  <p>I like to study about technology.</p>
+  <p>I love technological developments.</p>
+  <p>My favorite food is pizza and omelette.</p>
+  <p>My favorite sport is  football and basketball.</p>
+  <p>My favorite subjects are technology and computers.</p>
+  <p>My favorite color is black.</p>
+  <p>My favorite places are the coast and the sea.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
